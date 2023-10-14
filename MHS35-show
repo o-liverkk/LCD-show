@@ -57,7 +57,7 @@ if [ $? -eq 0 ]; then
 sudo rm -rf rpi-fbcp
 wget --spider -q -o /dev/null --tries=1 -T 10 https://github.com
 if [ $? -eq 0 ]; then
-sudo git clone https://github.com/tasanakorn/rpi-fbcp
+sudo git clone https://ghproxy.com/https://github.com/tasanakorn/rpi-fbcp
 if [ $? -ne 0 ]; then
 echo "download fbcp failed, copy native fbcp!!!"
 sudo cp -r ./usr/rpi-fbcp .
